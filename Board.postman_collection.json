@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "46ad5c21-ad96-488f-b9d8-397ebe68d60c",
+		"name": "Board",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33523802",
+		"_collection_link": "https://bold-trinity-849487.postman.co/workspace/New-Team-Workspace~e8c3da05-2d52-47fc-bf6a-f617bec6754f/collection/33523802-46ad5c21-ad96-488f-b9d8-397ebe68d60c?action=share&source=collection_link&creator=33523802"
+	},
+	"item": [
+		{
+			"name": "get through complex filters",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/jobsByfilter?filter=(job_type=full-time AND (languages HAS_ANY (PHP,JavaScript))) AND (locations IS_ANY (New York,Remote)) AND attribute:years_experience>=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jobsByfilter"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "(job_type=full-time AND (languages HAS_ANY (PHP,JavaScript))) AND (locations IS_ANY (New York,Remote)) AND attribute:years_experience>=3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get through service",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/jobsByService?filter=(job_type=full-time AND (languages HAS_ANY (PHP,JavaScript))) AND (locations IS_ANY (New York,Remote)) AND attribute:years_experience>=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jobsByService"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "(job_type=full-time AND (languages HAS_ANY (PHP,JavaScript))) AND (locations IS_ANY (New York,Remote)) AND attribute:years_experience>=3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
