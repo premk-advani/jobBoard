@@ -1,5 +1,6 @@
 1) Clone project through following command
-
+   git clone https://github.com/premk-advani/jobBoard.git
+   cd jobBoard
 
 2) create a database named board
 
